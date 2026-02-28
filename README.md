@@ -3,9 +3,17 @@
 
 PCB-Bench is the **first comprehensive benchmark** designed to systematically evaluate (multimodal) large language models (LLMs/MLLMs) in the context of **PCB placement and routing**. It addresses the lack of standardized benchmarks and high-fidelity datasets for real-world PCB engineering reasoning by integrating **text**, **images**, and **real PCB design artifacts** into a unified evaluation framework.
 
----
+
+<p align="center">
+  <img src="figs/tab_1.png" width="70%">
+</p>
+
 
 ## What's Included
+
+<p align="center">
+  <img src="figs/fig_1.png" width="85%">
+</p>
 
 PCB-Bench spans **three complementary task settings** and corresponding datasets: 
 
@@ -26,7 +34,11 @@ PCB-Bench spans **three complementary task settings** and corresponding datasets
 - Each design includes artifacts such as **schematics**, **placement/routing files**, **design descriptions**, **component libraries**, and **EDA software screenshots**
 - Task setting: given a **standalone EDA editor screenshot** (no extra text/schematic provided), models generate a **free-form description** of the board’s function/structure/application scenario, assessing structured visual interpretation of professional PCB artifacts. 
 
----
+<p align="center">
+  <img src="figs/fig_2.png" width="85%">
+</p>
+
+
 
 ## Task Formulation
 
@@ -41,7 +53,7 @@ PCB-Bench is organized into three task settings aligned with real engineering wo
 - **Task 3: PCB Design Understanding (Screenshot-to-Description)**  
   Describe full-board PCB screenshots from EDA tools using free-form functional/structural descriptions.
 
----
+
 
 ## Evaluation Protocol
 
@@ -52,7 +64,7 @@ All models are evaluated under a **unified zero-shot setting** across tasks (eac
 - **Free-form QA:** **BERTScore** and **Sentence-BERT (SBERT) similarity** for semantic consistency with reference answers
 - **Task 3 (Design Understanding):** additionally report **Precision / Recall / F1-score** to capture complementary aspects of prediction quality
 
----
+
 
 ## Models Evaluated in the Paper
 
@@ -60,7 +72,23 @@ The paper benchmarks a diverse set of state-of-the-art LLMs/MLLMs under the unif
 
 (For the exact model lists per task, please refer to the paper.)
 
----
+<p align="center">
+  <img src="figs/fig_5.png" width="99%">
+</p>
+
+<p align="center">
+  <img src="figs/tab_2.png" width="85%">
+</p>
+
+<p align="center">
+  <img src="figs/tab_3.png" width="60%">
+</p>
+
+<p align="center">
+  <img src="figs/tab_4.png" width="50%">
+</p>
+
+
 
 ## Data Sources & Licensing
 
@@ -68,13 +96,15 @@ The paper benchmarks a diverse set of state-of-the-art LLMs/MLLMs under the unif
 - Real-world PCB projects are collected from **OSHWHub**; each design is associated with a corresponding URL link to ensure transparency and IP protection.  
 - PCB-Bench is released with **open licensing** to support reproducibility and standardized comparison. 
 
----
+<p align="center">
+  <img src="figs/fig_4.png" width="85%">
+</p>
 
 ## Reproducibility
 
 The paper details task formulations, metrics, and model settings. Results are obtained under the unified **zero-shot** setting. The benchmark is released **along with evaluation scripts and configuration files** to support reproduction and extension. 
 
----
+
 
 ## Citation
 
