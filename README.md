@@ -35,7 +35,7 @@ PCB-Bench spans **three complementary task settings** and corresponding datasets
 - Task setting: given a **standalone EDA editor screenshot** (no extra text/schematic provided), models generate a **free-form description** of the board’s function/structure/application scenario, assessing structured visual interpretation of professional PCB artifacts. 
 
 <p align="center">
-  <img src="figs/fig_2.png" width="85%">
+  <img src="figs/fig_2.png" width="75%">
 </p>
 
 
