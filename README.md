@@ -81,7 +81,7 @@ The paper benchmarks a diverse set of state-of-the-art LLMs/MLLMs under the unif
 </p>
 
 <p align="center">
-  <img src="figs/tab_3.png" width="60%">
+  <img src="figs/tab_3.png" width="55%">
 </p>
 
 <p align="center">
@@ -99,6 +99,12 @@ The paper benchmarks a diverse set of state-of-the-art LLMs/MLLMs under the unif
 <p align="center">
   <img src="figs/fig_4.png" width="70%">
 </p>
+
+
+<p align="center">
+  <img src="figs/fig_6.png" width="60%">
+</p>
+
 
 ## Reproducibility
 
