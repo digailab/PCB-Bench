@@ -97,7 +97,7 @@ The paper benchmarks a diverse set of state-of-the-art LLMs/MLLMs under the unif
 - PCB-Bench is released with **open licensing** to support reproducibility and standardized comparison. 
 
 <p align="center">
-  <img src="figs/fig_4.png" width="85%">
+  <img src="figs/fig_4.png" width="70%">
 </p>
 
 ## Reproducibility
