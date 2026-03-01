@@ -1,25 +1,207 @@
-<h1>PCB-Bench</h1>
-<p><b>PCB-Bench: Benchmarking LLMs for Printed Circuit Board Placement and Routing</b></p>
-<p>ICLR 2026</p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PCB-Bench (ICLR 2026)</title>
+  <style>
+    :root {
+      --maxw: 980px;
+      --fg: #111;
+      --muted: #444;
+      --line: #e6e6e6;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      color: var(--fg);
+      background: #fff;
+    }
+    .container {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 28px 18px 60px;
+      text-align: center; /* ✅ global center */
+    }
+    h1 {
+      margin: 8px 0 6px;
+      font-size: 44px;
+      letter-spacing: 0.2px;
+    }
+    .subtitle {
+      font-size: 18px;
+      margin: 0;
+    }
+    .meta {
+      margin: 10px 0 18px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .links a {
+      display: inline-block;
+      margin: 0 10px;
+      text-decoration: none;
+      color: #0b57d0;
+      font-weight: 600;
+    }
+    .links a:hover { text-decoration: underline; }
+    .divider {
+      height: 1px;
+      background: var(--line);
+      margin: 22px auto;
+      width: 92%;
+    }
+    .blurb {
+      max-width: 900px;
+      margin: 0 auto 18px;
+      line-height: 1.55;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .section-title {
+      margin: 26px 0 10px;
+      font-size: 22px;
+    }
+    figure {
+      margin: 18px auto;
+    }
+    img {
+      display: block;          /* ✅ center by block + auto margin */
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+    .imgcap {
+      margin-top: 8px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .pill {
+      display: inline-block;
+      padding: 6px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      font-size: 13px;
+      margin: 6px 6px 0;
+      color: var(--muted);
+    }
+    .card {
+      margin: 14px auto 0;
+      padding: 14px 14px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      max-width: 820px;
+      text-align: center;
+    }
+    pre {
+      text-align: left;        /* bibtex left inside centered page */
+      max-width: 820px;
+      margin: 12px auto 0;
+      padding: 14px;
+      background: #fafafa;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      overflow-x: auto;
+      font-size: 13px;
+      line-height: 1.4;
+    }
+    .footer {
+      margin-top: 34px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+  </style>
+</head>
 
-<p>
-<a href="https://openreview.net/forum?id=Q5QLu7XTWx&referrer">Paper</a> |
-<a href="https://github.com/digailab/PCB-Bench">Code</a>
-</p>
+<body>
+  <div class="container">
+    <h1>PCB-Bench</h1>
+    <p class="subtitle"><b>PCB-Bench: Benchmarking LLMs for Printed Circuit Board Placement and Routing</b> (ICLR 2026)</p>
 
-<img src="figs/fig_1.png" width="800">
+    <p class="meta links">
+      <a href="https://openreview.net/forum?id=Q5QLu7XTWx&referrer" target="_blank" rel="noopener">📄 Paper (OpenReview)</a>
+      <a href="https://github.com/digailab/PCB-Bench" target="_blank" rel="noopener">💻 Code (GitHub)</a>
+      <a href="https://digailab.github.io/PCB-Bench/" target="_blank" rel="noopener">🌐 Project Page</a>
+    </p>
 
-<h2>Overview</h2>
-<p>PCB-Bench is the first comprehensive benchmark ...</p>
+    <p class="blurb">
+      PCB-Bench is a comprehensive benchmark designed to systematically evaluate (multimodal) large language models (LLMs/MLLMs)
+      for PCB placement and routing by integrating text, images, and real PCB design artifacts into a unified evaluation framework.
+    </p>
 
-<h2>Dataset</h2>
-<ul>
-<li>~3,700 text QA/CQ</li>
-<li>~500 multimodal problems</li>
-<li>174 real-world PCB projects</li>
-</ul>
+    <div class="divider"></div>
 
-<h2>Citation</h2>
-<pre>
-@inproceedings{...}
-</pre>
+    <!-- ✅ README image: tab_1 -->
+    <figure>
+      <img src="figs/tab_1.png" alt="Table 1" style="width:70%;">
+    </figure>
+
+    <div class="divider"></div>
+
+    <h2 class="section-title">What's Included</h2>
+
+    <!-- ✅ README image: fig_1 -->
+    <figure>
+      <img src="figs/fig_1.png" alt="Figure 1" style="width:85%;">
+    </figure>
+
+    <div class="card">
+      <span class="pill">~3,700 Text QA/CQ</span>
+      <span class="pill">~500 Multimodal Problems</span>
+      <span class="pill">174 Real-world PCB Projects</span>
+    </div>
+
+    <!-- ✅ README image: fig_2 -->
+    <figure>
+      <img src="figs/fig_2.png" alt="Figure 2" style="width:75%;">
+    </figure>
+
+    <div class="divider"></div>
+
+    <h2 class="section-title">Models & Results</h2>
+
+    <!-- ✅ README images: fig_5, tab_2, tab_3, tab_4 -->
+    <figure>
+      <img src="figs/fig_5.png" alt="Figure 5" style="width:99%;">
+    </figure>
+
+    <figure>
+      <img src="figs/tab_2.png" alt="Table 2" style="width:85%;">
+    </figure>
+
+    <figure>
+      <img src="figs/tab_3.png" alt="Table 3" style="width:55%;">
+    </figure>
+
+    <figure>
+      <img src="figs/tab_4.png" alt="Table 4" style="width:50%;">
+    </figure>
+
+    <div class="divider"></div>
+
+    <h2 class="section-title">Data Sources & Licensing</h2>
+
+    <!-- ✅ README images: fig_4, fig_6 -->
+    <figure>
+      <img src="figs/fig_4.png" alt="Figure 4" style="width:70%;">
+    </figure>
+
+    <figure>
+      <img src="figs/fig_6.png" alt="Figure 6" style="width:60%;">
+    </figure>
+
+    <div class="divider"></div>
+
+    <h2 class="section-title">Citation</h2>
+    <pre>@inproceedings{li2026pcbbench,
+  title     = {PCB-Bench: Benchmarking LLMs for Printed Circuit Board Placement and Routing},
+  author    = {Jindong Li and Lianrong Chen and Bin Yang and Jiadong Zhu and Ying Wang and Yuzhe Ma and Menglin Yang},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2026}
+}</pre>
+
+    <p class="footer">© PCB-Bench (ICLR 2026). All content is provided for academic research and benchmarking.</p>
+  </div>
+</body>
+</html>
