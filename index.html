@@ -5,203 +5,288 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PCB-Bench (ICLR 2026)</title>
   <style>
-    :root {
-      --maxw: 980px;
+    :root{
+      --maxw: 1040px;
       --fg: #111;
-      --muted: #444;
-      --line: #e6e6e6;
+      --muted: #4a4a4a;
+      --line: #e7e7e7;
+      --btn: #0b57d0;
+      --btn2:#111;
+      --bg: #ffffff;
+      --soft:#fafafa;
     }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
-      color: var(--fg);
-      background: #fff;
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Noto Sans","Liberation Sans",sans-serif;
+      color:var(--fg);
+      background:var(--bg);
     }
-    .container {
-      max-width: var(--maxw);
-      margin: 0 auto;
-      padding: 28px 18px 60px;
-      text-align: center; /* ✅ global center */
+    .wrap{
+      max-width:var(--maxw);
+      margin:0 auto;
+      padding:38px 18px 64px;
+      text-align:center; /* ✅ all centered */
     }
-    h1 {
-      margin: 8px 0 6px;
-      font-size: 44px;
-      letter-spacing: 0.2px;
+    h1{
+      font-size:48px;
+      margin:6px 0 10px;
+      letter-spacing:0.2px;
     }
-    .subtitle {
-      font-size: 18px;
-      margin: 0;
+    .published{
+      font-size:14px;
+      color:var(--muted);
+      margin:0 0 10px;
     }
-    .meta {
-      margin: 10px 0 18px;
-      color: var(--muted);
-      font-size: 14px;
+    .title{
+      font-size:18px;
+      margin:0 0 10px;
+      line-height:1.35;
     }
-    .links a {
-      display: inline-block;
-      margin: 0 10px;
-      text-decoration: none;
-      color: #0b57d0;
-      font-weight: 600;
+    .authors{
+      font-size:15px;
+      margin:10px 0 6px;
+      line-height:1.45;
     }
-    .links a:hover { text-decoration: underline; }
-    .divider {
-      height: 1px;
-      background: var(--line);
-      margin: 22px auto;
-      width: 92%;
+    .affil{
+      font-size:14px;
+      margin:0 0 8px;
+      color:var(--muted);
     }
-    .blurb {
-      max-width: 900px;
-      margin: 0 auto 18px;
-      line-height: 1.55;
-      color: var(--muted);
-      font-size: 15px;
+    .notes{
+      font-size:13px;
+      margin:0 0 18px;
+      color:var(--muted);
     }
-    .section-title {
-      margin: 26px 0 10px;
-      font-size: 22px;
+
+    .btns{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:10px;
+      margin:12px 0 20px;
     }
-    figure {
-      margin: 18px auto;
+    .btn{
+      display:inline-block;
+      padding:10px 14px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      text-decoration:none;
+      font-weight:700;
+      font-size:14px;
+      color:var(--btn2);
+      background:#fff;
     }
-    img {
-      display: block;          /* ✅ center by block + auto margin */
-      margin: 0 auto;
-      max-width: 100%;
-      height: auto;
-      border-radius: 6px;
+    .btn.primary{
+      background:var(--btn);
+      border-color:var(--btn);
+      color:#fff;
     }
-    .imgcap {
-      margin-top: 8px;
-      font-size: 12px;
-      color: var(--muted);
+    .btn:hover{ filter:brightness(0.98); }
+
+    .intro{
+      max-width:920px;
+      margin:0 auto 8px;
+      color:var(--muted);
+      font-size:15px;
+      line-height:1.65;
     }
-    .pill {
-      display: inline-block;
-      padding: 6px 10px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      font-size: 13px;
-      margin: 6px 6px 0;
-      color: var(--muted);
+
+    .divider{
+      height:1px;
+      width:92%;
+      background:var(--line);
+      margin:26px auto;
     }
-    .card {
-      margin: 14px auto 0;
-      padding: 14px 14px;
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      max-width: 820px;
-      text-align: center;
+
+    .sec{
+      margin:44px 0 10px;
     }
-    pre {
-      text-align: left;        /* bibtex left inside centered page */
-      max-width: 820px;
-      margin: 12px auto 0;
-      padding: 14px;
-      background: #fafafa;
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      overflow-x: auto;
-      font-size: 13px;
-      line-height: 1.4;
+    .sec h2{
+      font-size:26px;
+      margin:0 0 10px;
     }
-    .footer {
-      margin-top: 34px;
-      color: var(--muted);
-      font-size: 12px;
+    .sec p{
+      max-width:920px;
+      margin:0 auto 18px;
+      color:var(--muted);
+      font-size:15px;
+      line-height:1.65;
+    }
+
+    figure{ margin:22px auto; }
+    img{
+      display:block;
+      margin:0 auto;     /* ✅ images centered */
+      max-width:100%;
+      height:auto;
+      border-radius:8px;
+    }
+
+    .chips{
+      margin:10px auto 0;
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+    .chip{
+      padding:7px 12px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background:var(--soft);
+      font-size:13px;
+      color:var(--muted);
+      font-weight:600;
+    }
+
+    pre{
+      text-align:left;   /* BibTeX more readable */
+      max-width:920px;
+      margin:14px auto 0;
+      padding:14px 16px;
+      background:var(--soft);
+      border:1px solid var(--line);
+      border-radius:12px;
+      overflow-x:auto;
+      font-size:13px;
+      line-height:1.45;
+    }
+
+    .footer{
+      margin-top:44px;
+      color:var(--muted);
+      font-size:12px;
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
+  <div class="wrap">
     <h1>PCB-Bench</h1>
-    <p class="subtitle"><b>PCB-Bench: Benchmarking LLMs for Printed Circuit Board Placement and Routing</b> (ICLR 2026)</p>
+    <p class="published">Published as a Conference Paper at ICLR 2026</p>
 
-    <p class="meta links">
-      <a href="https://openreview.net/forum?id=Q5QLu7XTWx&referrer" target="_blank" rel="noopener">📄 Paper (OpenReview)</a>
-      <a href="https://github.com/digailab/PCB-Bench" target="_blank" rel="noopener">💻 Code (GitHub)</a>
-      <a href="https://digailab.github.io/PCB-Bench/" target="_blank" rel="noopener">🌐 Project Page</a>
+    <p class="title"><b>PCB-Bench: Benchmarking LLMs for Printed Circuit Board Placement and Routing</b></p>
+
+    <p class="authors">
+      Jindong Li, Lianrong Chen, Bin Yang, Jiadong Zhu, Ying Wang, Yuzhe Ma, Menglin Yang
     </p>
+    <p class="affil">Hong Kong University of Science and Technology (Guangzhou)</p>
 
-    <p class="blurb">
-      PCB-Bench is a comprehensive benchmark designed to systematically evaluate (multimodal) large language models (LLMs/MLLMs)
-      for PCB placement and routing by integrating text, images, and real PCB design artifacts into a unified evaluation framework.
-    </p>
-
-    <div class="divider"></div>
-
-    <!-- ✅ README image: tab_1 -->
-    <figure>
-      <img src="figs/tab_1.png" alt="Table 1" style="width:70%;">
-    </figure>
-
-    <div class="divider"></div>
-
-    <h2 class="section-title">What's Included</h2>
-
-    <!-- ✅ README image: fig_1 -->
-    <figure>
-      <img src="figs/fig_1.png" alt="Figure 1" style="width:85%;">
-    </figure>
-
-    <div class="card">
-      <span class="pill">~3,700 Text QA/CQ</span>
-      <span class="pill">~500 Multimodal Problems</span>
-      <span class="pill">174 Real-world PCB Projects</span>
+    <div class="btns">
+      <a class="btn primary" href="https://openreview.net/forum?id=Q5QLu7XTWx&referrer" target="_blank" rel="noopener">📄 Paper (OpenReview)</a>
+      <a class="btn" href="https://github.com/digailab/PCB-Bench" target="_blank" rel="noopener">💻 Code (GitHub)</a>
+      <a class="btn" href="https://digailab.github.io/PCB-Bench/" target="_blank" rel="noopener">🌐 Project Page</a>
     </div>
 
-    <!-- ✅ README image: fig_2 -->
-    <figure>
-      <img src="figs/fig_2.png" alt="Figure 2" style="width:75%;">
-    </figure>
+    <p class="intro">
+      PCB-Bench is the first comprehensive benchmark designed to systematically evaluate (multimodal) large language models (LLMs/MLLMs)
+      in the context of PCB placement and routing. It integrates text, images, and real PCB design artifacts into a unified evaluation framework
+      for realistic PCB engineering reasoning assessment.
+    </p>
 
     <div class="divider"></div>
 
-    <h2 class="section-title">Models & Results</h2>
-
-    <!-- ✅ README images: fig_5, tab_2, tab_3, tab_4 -->
-    <figure>
-      <img src="figs/fig_5.png" alt="Figure 5" style="width:99%;">
-    </figure>
-
-    <figure>
-      <img src="figs/tab_2.png" alt="Table 2" style="width:85%;">
-    </figure>
-
-    <figure>
-      <img src="figs/tab_3.png" alt="Table 3" style="width:55%;">
-    </figure>
-
-    <figure>
-      <img src="figs/tab_4.png" alt="Table 4" style="width:50%;">
-    </figure>
+    <!-- ====== INTRODUCTION / POSITIONING ====== -->
+    <div class="sec">
+      <h2>Introduction</h2>
+      <p>
+        PCB-Bench highlights the gap between existing publicly available PCB-related benchmarks and realistic PCB design evaluation,
+        and provides a unified benchmark suite for PCB placement and routing reasoning.
+      </p>
+      <figure>
+        <img src="figs/tab_1.png" alt="Table 1" style="width:70%;">
+      </figure>
+    </div>
 
     <div class="divider"></div>
 
-    <h2 class="section-title">Data Sources & Licensing</h2>
+    <!-- ====== BENCHMARK OVERVIEW ====== -->
+    <div class="sec">
+      <h2>Benchmark Overview</h2>
+      <p>
+        PCB-Bench spans three complementary task settings and corresponding datasets:
+        (1) text-based reasoning (Text-to-Text QA & CQ),
+        (2) multimodal image-text reasoning (Image-and-Text QA/CQ),
+        and (3) real-world PCB design comprehension (PCB Design Understanding).
+      </p>
 
-    <!-- ✅ README images: fig_4, fig_6 -->
-    <figure>
-      <img src="figs/fig_4.png" alt="Figure 4" style="width:70%;">
-    </figure>
+      <figure>
+        <img src="figs/fig_1.png" alt="Figure 1" style="width:85%;">
+      </figure>
 
-    <figure>
-      <img src="figs/fig_6.png" alt="Figure 6" style="width:60%;">
-    </figure>
+      <div class="chips">
+        <div class="chip">~3,700 Text QA/CQ</div>
+        <div class="chip">~500 Multimodal Problems</div>
+        <div class="chip">174 Real-world PCB Projects</div>
+      </div>
+
+      <figure>
+        <img src="figs/fig_2.png" alt="Figure 2" style="width:75%;">
+      </figure>
+    </div>
 
     <div class="divider"></div>
 
-    <h2 class="section-title">Citation</h2>
-    <pre>@inproceedings{li2026pcbbench,
+    <!-- ====== MODELS & RESULTS ====== -->
+    <div class="sec">
+      <h2>Models & Results</h2>
+      <p>
+        We benchmark a diverse set of state-of-the-art LLMs/MLLMs under a unified zero-shot protocol.
+        The results reveal substantial performance variation across tasks, reflecting the remaining challenges in PCB placement and routing reasoning.
+      </p>
+
+      <figure>
+        <img src="figs/fig_5.png" alt="Figure 5" style="width:99%;">
+      </figure>
+
+      <figure>
+        <img src="figs/tab_2.png" alt="Table 2" style="width:85%;">
+      </figure>
+
+      <figure>
+        <img src="figs/tab_3.png" alt="Table 3" style="width:55%;">
+      </figure>
+
+      <figure>
+        <img src="figs/tab_4.png" alt="Table 4" style="width:50%;">
+      </figure>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- ====== DATA SOURCES & LICENSING ====== -->
+    <div class="sec">
+      <h2>Data Sources & Licensing</h2>
+      <p>
+        PCB designs are collected from publicly available and legally accessible sources (including OSHWHub operated by JLCPCB),
+        with no proprietary or sensitive industrial data involved. Each real-world project is associated with traceable artifacts for transparency and reproducibility.
+      </p>
+
+      <figure>
+        <img src="figs/fig_4.png" alt="Figure 4" style="width:70%;">
+      </figure>
+
+      <figure>
+        <img src="figs/fig_6.png" alt="Figure 6" style="width:60%;">
+      </figure>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- ====== CITATION ====== -->
+    <div class="sec">
+      <h2>Citation</h2>
+      <pre>@inproceedings{li2026pcbbench,
   title     = {PCB-Bench: Benchmarking LLMs for Printed Circuit Board Placement and Routing},
   author    = {Jindong Li and Lianrong Chen and Bin Yang and Jiadong Zhu and Ying Wang and Yuzhe Ma and Menglin Yang},
   booktitle = {International Conference on Learning Representations (ICLR)},
   year      = {2026}
 }</pre>
+    </div>
 
-    <p class="footer">© PCB-Bench (ICLR 2026). All content is provided for academic research and benchmarking.</p>
+    <p class="footer">
+      © PCB-Bench (ICLR 2026). For academic research and benchmarking.
+    </p>
   </div>
 </body>
 </html>
