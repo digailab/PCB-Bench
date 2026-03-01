@@ -1,0 +1,38 @@
+#!/usr/bin/env python3
+# PCB Benchmark 项目依赖
+# 使用 AiHubMix 统一接口，支持多种LLM模型
+
+# 核心依赖
+pandas>=1.5.0
+numpy>=1.23.0
+openpyxl>=3.0.0  # 用于读取Excel文件
+
+# LLM API支持 - 统一使用OpenAI SDK通过AiHubMix接口
+openai>=1.0.0
+
+# 异步HTTP客户端 - 支持并行评测
+aiohttp>=3.8.0
+
+# 配置文件和环境变量管理
+PyYAML>=6.0
+python-dotenv>=1.0.0
+
+# 数据处理
+jsonlines>=3.0.0
+
+# 命令行工具和进度显示
+click>=8.0.0
+tqdm>=4.64.0
+
+# 日期时间处理
+python-dateutil>=2.8.0
+
+# 错误处理和重试机制
+tenacity>=8.0.0
+
+# 开发和测试依赖（可选）
+pytest>=7.0.0
+pytest-cov>=4.0.0
+pytest-asyncio>=0.21.0
+black>=22.0.0
+flake8>=5.0.0 
