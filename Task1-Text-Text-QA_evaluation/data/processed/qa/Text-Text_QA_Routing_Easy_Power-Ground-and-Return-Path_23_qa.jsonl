@@ -1,0 +1,23 @@
+{"id": "qa_0", "question": "What should be prioritized in power routing?", "answer": "Low impedance and high current capacity, using wide traces or copper pours."}
+{"id": "qa_1", "question": "Can signal traces cross split ground planes?", "answer": "No, it causes return path interruption and signal integrity problems."}
+{"id": "qa_2", "question": "What should be noted about signal routing between VCC and GND?", "answer": "Avoid routing signals between them to prevent coupling noise paths."}
+{"id": "qa_3", "question": "What is the preferred method for routing GND?", "answer": "Use a complete ground plane instead of narrow traces."}
+{"id": "qa_4", "question": "What are the characteristics of a good ground return path?", "answer": "It should be short, direct, continuous, and form a loop close to the signal trace."}
+{"id": "qa_5", "question": "Why are ground vias important for routing reliability?", "answer": "They ensure return path continuity and reduce loop area of return current."}
+{"id": "qa_6", "question": "Why should signal traces avoid power filter capacitor pins?", "answer": "To avoid coupling noise into the power filter and degrading its effectiveness."}
+{"id": "qa_7", "question": "How to handle multiple GND networks during routing?", "answer": "Partition them and isolate using filters or ferrite beads instead of direct connections."}
+{"id": "qa_8", "question": "How to handle return paths across split ground regions?", "answer": "Add stitching vias across split regions to maintain return path continuity."}
+{"id": "qa_9", "question": "Why is it recommended to route signal traces close to the ground plane?", "answer": "It forms a closed return path, reducing EMI and improving signal integrity."}
+{"id": "qa_10", "question": "What is the recommended relationship between power and signal traces?", "answer": "Keep proper spacing and isolate with ground planes to avoid coupling."}
+{"id": "qa_11", "question": "If a signal trace must cross a split ground, how to handle it?", "answer": "Add ground vias or bridges near the crossing to maintain return path."}
+{"id": "qa_12", "question": "What is the role of a reference plane in PCB routing?", "answer": "It provides return path, maintains impedance, and reduces noise."}
+{"id": "qa_13", "question": "Why are stitching ground vias recommended at signal layer changes?", "answer": "To preserve return path continuity and suppress noise coupling from reference layer changes."}
+{"id": "qa_14", "question": "What to consider when power and signal traces intersect?", "answer": "Cross them orthogonally and avoid long parallel paths."}
+{"id": "qa_15", "question": "How to route multiple ground networks?", "answer": "Isolate them using inductors, ferrite beads, or RC networks to prevent loops and noise."}
+{"id": "qa_16", "question": "Can multiple signals share the same return path?", "answer": "Low-speed signals may share paths, but high-speed ones need dedicated return paths."}
+{"id": "qa_17", "question": "What is ground reference continuity?", "answer": "It means that signal traces should have a continuous ground plane beneath for return current."}
+{"id": "qa_18", "question": "How to select proper trace width for power lines?", "answer": "Based on current capacity, calculated from standard trace width-to-current charts."}
+{"id": "qa_19", "question": "Why is it not advised to route power and signal on the same layer?", "answer": "It can confuse return paths and increase crosstalk risk."}
+{"id": "qa_20", "question": "Which signals should not share a common ground?", "answer": "High-speed, analog, and RF signals should use separate or analog grounds."}
+{"id": "qa_21", "question": "Why should signal traces stay close to their source ground?", "answer": "It forms a complete loop and reduces common-mode noise and ground bounce."}
+{"id": "qa_22", "question": "Should return paths be re-optimized after routing?", "answer": "Yes, ensure each critical signal has a closed, tight return path."}

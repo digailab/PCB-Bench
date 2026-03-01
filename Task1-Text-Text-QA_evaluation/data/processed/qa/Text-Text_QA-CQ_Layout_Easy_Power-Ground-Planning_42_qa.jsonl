@@ -1,0 +1,42 @@
+{"id": "qa_0", "question": "Why should decoupling capacitors be placed close to the IC power pins?", "answer": "To effectively filter power noise and provide immediate current response."}
+{"id": "qa_1", "question": "What should be considered when placing the power input port?", "answer": "It should be near the board edge with enough copper area to carry current."}
+{"id": "qa_2", "question": "Which components should filter capacitors be placed close to?", "answer": "They should be placed close to the input and output pins of the power conversion chip."}
+{"id": "qa_3", "question": "How should power modules be placed to optimize heat dissipation?", "answer": "They should be placed near the board edge with large copper areas or thermal vias for heat conduction."}
+{"id": "qa_4", "question": "How to reduce environmental noise when placing capacitive sensors?", "answer": "Keep them away from high-voltage nodes and surround the sensing area with shielding layers."}
+{"id": "qa_5", "question": "How should current-sensing resistors be placed?", "answer": "They should be placed close to the load path to avoid long trace-induced errors."}
+{"id": "qa_6", "question": "What should be considered when placing charge pump ICs?", "answer": "Ensure sufficient copper area for heat and keep away from sensitive analog zones."}
+{"id": "qa_7", "question": "How should analog and digital ground be placed in a PCB?", "answer": "They should be physically isolated and connected at a single ground point."}
+{"id": "qa_8", "question": "How should input/output capacitors be placed around a switching power IC?", "answer": "They should be placed close to the IC to minimize loop area."}
+{"id": "qa_9", "question": "How should Hall sensors for current sampling be placed?", "answer": "They should be placed on the centerline of the current path and shielded from external magnetic interference."}
+{"id": "qa_10", "question": "Why is it recommended to separate analog and digital power domains in layout?", "answer": "To avoid noise coupling and improve system stability and signal purity."}
+{"id": "qa_11", "question": "Where should USB-powered modules be placed in a PCB layout?", "answer": "They should be placed near the USB connector to shorten the power path."}
+{"id": "qa_12", "question": "What should be noted for power routing on PCBs with EMC requirements?", "answer": "Use star routing to reduce ground loop areas."}
+{"id": "qa_13", "question": "How should TVS diodes be placed for effective overvoltage protection?", "answer": "They should be placed close to the protected pin, with a short path and solid grounding."}
+{"id": "qa_14", "question": "How should voltage comparators for power monitoring be placed?", "answer": "Place them close to the monitored node with short, direct traces and away from noisy areas."}
+{"id": "qa_15", "question": "How should overcurrent protection resistors be placed in power paths?", "answer": "Place them near the power input with proper ground return."}
+{"id": "qa_16", "question": "How should connectors on high-current paths be placed?", "answer": "Close to power or load ends with the shortest path possible."}
+{"id": "qa_17", "question": "How should input/output capacitors be placed for boost inductive converters?", "answer": "They should be placed as close to the IC pins as possible to reduce current loop area."}
+{"id": "qa_18", "question": "How should auxiliary power outputs be placed in flyback designs?", "answer": "Place them away from switching nodes and close to the controller's auxiliary input."}
+{"id": "qa_19", "question": "How should high-current drive modules be placed?", "answer": "They should be placed close to the power input and load to minimize current loop area."}
+{"id": "qa_20", "question": "How can layout improve a power module’s noise immunity?", "answer": "Use compact placement, tight LC loops, and proximity to the ground plane."}
+{"id": "qa_21", "question": "How should LC circuits for high-frequency filtering be placed?", "answer": "Place them close to the signal source, form compact loops, and reduce parasitics."}
+{"id": "qa_22", "question": "Where should decoupling capacitors for an SD card module be placed?", "answer": "Near the power pin with short traces and solid ground connection."}
+{"id": "qa_23", "question": "What should be noted when placing power ICs with soft-start?", "answer": "Place the soft-start capacitor close to the chip and avoid interference coupling."}
+{"id": "qa_24", "question": "When using dual power rails, where should analog circuits be placed?", "answer": "Close to the analog positive and negative rails, avoiding crossing between zones."}
+{"id": "qa_25", "question": "Where should isolation transformers be placed?", "answer": "Away from analog and low-noise modules, and close to the driver IC."}
+{"id": "qa_26", "question": "How should input/output filters be placed for LDOs?", "answer": "Capacitors should be close to the LDO pins with a closed-loop path to ground on output."}
+{"id": "qa_27", "question": "How should capacitive touch modules be placed to enhance noise immunity?", "answer": "Keep some spacing from ground planes and avoid overlapping with high-frequency traces."}
+{"id": "qa_28", "question": "How should grounding be planned for high-voltage charge/discharge circuits?", "answer": "Separate power and control grounds to prevent overlapping current loops."}
+{"id": "qa_29", "question": "Where should the switching node of a digital power IC be placed?", "answer": "Near the output inductor and avoid having signals routed below it."}
+{"id": "qa_30", "question": "Which signals should capacitive digital isolators be kept away from?", "answer": "Keep them away from high-speed differential, clock, and RF signals."}
+{"id": "qa_31", "question": "Which modules should high-voltage capacitors be kept away from?", "answer": "Control chips, RF circuits, and isolation clearance zones."}
+{"id": "qa_32", "question": "How should Hall-based current sensors with ADC be placed?", "answer": "Place near the current path and away from strong magnetic fields."}
+{"id": "qa_33", "question": "Where should ferrite beads for power filtering be placed?", "answer": "Near the noise source, with adjacent decoupling capacitors to form a filter unit."}
+{"id": "qa_34", "question": "What should be noted when placing charge/discharge paths with large capacitors?", "answer": "Use wide copper, place near controllers, and avoid excessive vias."}
+{"id": "qa_35", "question": "How should feedback paths be laid out for power modules driving analog loads?", "answer": "Feedback should be taken from the load side and kept away from switching nodes."}
+{"id": "qa_36", "question": "How should overlapping areas in multi-rail systems be handled?", "answer": "Use partitioned routing or inner-layer isolation to prevent power interference coupling."}
+{"id": "qa_37", "question": "How should high-current paths be routed for battery protection ICs?", "answer": "Use wide copper or dual-layer routing with good thermal paths."}
+{"id": "qa_38", "question": "What stack-up rules should be followed for power planes?", "answer": "Include ground layers between power planes to reduce noise coupling."}
+{"id": "qa_39", "question": "Where should chassis grounding pads be placed?", "answer": "Near connectors or case contacts with large pads and ground copper."}
+{"id": "qa_40", "question": "How should the EN (enable) pin of a power chip be routed?", "answer": "Use short, direct routing away from noise; add RC filter if needed."}
+{"id": "qa_41", "question": "How should analog and digital power be separated in multi-layer systems?", "answer": "Use different power planes or isolated copper areas."}

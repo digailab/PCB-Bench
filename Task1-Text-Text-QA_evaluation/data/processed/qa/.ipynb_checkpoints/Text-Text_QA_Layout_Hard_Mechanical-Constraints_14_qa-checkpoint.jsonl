@@ -1,0 +1,14 @@
+{"id": "qa_0", "question": "How to layout connectors and large packages for mechanical reliability under vibration?", "answer": "Place on areas with solid copper support and reinforce pads with via arrays."}
+{"id": "qa_1", "question": "In dual-board systems with FPCs, how to layout connectors and sensitive modules to minimize mechanical interference?", "answer": "Place connectors at stress-minimized points, route FPCs away from analog/RF modules, and reinforce key areas with mechanical support."}
+{"id": "qa_2", "question": "In touch + mechanical input systems, how to layout UI zones to reduce false triggering?", "answer": "Partition touch and keys, center the controller IC, and route touch traces away from key scans."}
+{"id": "qa_3", "question": "In MEMS audio+IMU modules, how to layout to reduce mechanical coupling?", "answer": "Isolate mic and IMU, avoid resonance paths, add ground shielding."}
+{"id": "qa_4", "question": "How to enhance connector mounting strength under high vibration?", "answer": "Use large copper pour and via arrays around connectors for reinforced mechanical bonding."}
+{"id": "qa_5", "question": "Why is it not recommended to place large chips near PCB edges?", "answer": "PCB edges are stress-prone and may cause pad lifting or component detachment."}
+{"id": "qa_6", "question": "How to provide additional support for heavy components?", "answer": "Use mechanical holes with screws or standoffs to increase vertical stability."}
+{"id": "qa_7", "question": "How to place alignment holes in multi-board assemblies?", "answer": "Place them symmetrically at board corners, away from dense areas, and ensure dimensional consistency."}
+{"id": "qa_8", "question": "How to prevent solder cracks in large packages due to vibration?", "answer": "Avoid floating layout, place near copper-supported zones, and reinforce pads with stitching vias."}
+{"id": "qa_9", "question": "How to reduce thermal stress on long connector regions?", "answer": "Use buffer zones or serpentine routing to absorb micro-expansion/contraction."}
+{"id": "qa_10", "question": "How to prevent interlayer separation in high-G environments?", "answer": "Use symmetric stack-up, strong lamination, and edge mechanical fixtures."}
+{"id": "qa_11", "question": "How to improve drop resistance through PCB edge design?", "answer": "Add corner rounding, avoid sharp vias, and minimize stress concentration points."}
+{"id": "qa_12", "question": "What mechanical details matter for high-frequency connector mounting?", "answer": "Use screws with metal brackets and provide robust grounding zones."}
+{"id": "qa_13", "question": "How to enhance multilayer PCB stability under temp/humidity changes?", "answer": "Maintain balanced copper distribution to prevent warping from uneven expansion."}

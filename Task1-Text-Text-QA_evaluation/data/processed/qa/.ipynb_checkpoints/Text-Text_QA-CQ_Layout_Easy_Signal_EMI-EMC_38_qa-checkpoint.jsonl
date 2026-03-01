@@ -1,0 +1,38 @@
+{"id": "qa_0", "question": "How should the crystal oscillator be placed to reduce interference and improve stability?", "answer": "It should be placed as close as possible to the crystal pins of the chip and away from high-speed traces."}
+{"id": "qa_1", "question": "How should digital and analog circuits be isolated in layout?", "answer": "They should be placed in separate areas and isolated by independent ground planes or single-point grounding."}
+{"id": "qa_2", "question": "What components should not be placed near high-speed signal traces?", "answer": "High-impedance inputs or sensitive analog modules should be avoided to prevent signal crosstalk."}
+{"id": "qa_3", "question": "How should a multi-channel ADC module be placed to reduce crosstalk?", "answer": "Channels should be symmetrically placed and isolated using analog ground."}
+{"id": "qa_4", "question": "Why should high-frequency signal lines not be routed near analog circuits?", "answer": "They may cause electromagnetic coupling that affects analog signal accuracy."}
+{"id": "qa_5", "question": "How should multiple ICs in series be laid out to optimize timing?", "answer": "Place them in a straight line to minimize daisy-chain delays."}
+{"id": "qa_6", "question": "Which interference sources should audio circuits be kept away from in PCB layout?", "answer": "They should be kept away from digital high-speed signals, switching power supplies, and high-current paths."}
+{"id": "qa_7", "question": "In high-speed PCBs, how should clock generation circuits be placed?", "answer": "They should be placed near the controlled chip, with short and straight traces and away from interference sources."}
+{"id": "qa_8", "question": "Why is it not recommended to place high-frequency oscillators over multilayer vias in PCBs?", "answer": "It introduces parasitic inductance and impedance discontinuity, which affects clock stability."}
+{"id": "qa_9", "question": "What should be placed near the analog output of a sensor?", "answer": "Amplifiers or ADCs should be placed nearby to reduce signal transmission loss."}
+{"id": "qa_10", "question": "What components should be avoided in high-speed DDR routing areas?", "answer": "Avoid placing capacitors, inductors, and other metal-shielded components."}
+{"id": "qa_11", "question": "What signals should be kept away from ADC inputs?", "answer": "High-speed switching signals and high-current paths should be avoided."}
+{"id": "qa_12", "question": "In multilayer PCBs, where should analog signals be routed?", "answer": "They should be routed on inner layers close to continuous ground planes to reduce interference."}
+{"id": "qa_13", "question": "What components should be avoided near high-speed differential traces?", "answer": "Avoid power devices, switching components, and regions with dense trace crossings."}
+{"id": "qa_14", "question": "How to reduce EMI when placing sensor modules?", "answer": "Maintain adequate distance from interference sources and surround key signals with grounded shielding."}
+{"id": "qa_15", "question": "How to layout multi-channel amplifiers to reduce crosstalk?", "answer": "Use symmetrical layout, ground isolation, and avoid crossover traces."}
+{"id": "qa_16", "question": "Which signals should thermocouple interfaces be kept away from?", "answer": "High-frequency switching signals and high-current routing areas."}
+{"id": "qa_17", "question": "How should LCD driver ICs be placed to avoid interference?", "answer": "Near the LCD connector and away from high-frequency power areas."}
+{"id": "qa_18", "question": "Which signals should MCU reset pins be kept away from?", "answer": "Clock, high-speed data, and power switching paths."}
+{"id": "qa_19", "question": "Where should signal conditioning modules for analog acquisition be placed?", "answer": "Close to the sampling port to avoid interference from long traces."}
+{"id": "qa_20", "question": "When placing differential signals, how should path length differences be managed?", "answer": "Ensure matched lengths, symmetrical routing, and avoid uneven bends."}
+{"id": "qa_21", "question": "How should timing-sensitive signals like RESET be routed and placed?", "answer": "Avoid noisy areas, use short and direct routing with proper shielding."}
+{"id": "qa_22", "question": "Is it suitable to route high-speed signals under large copper pours?", "answer": "Not recommended due to potential impedance disruption from discontinuities or voids."}
+{"id": "qa_23", "question": "How should the crystal input of an MCU be routed?", "answer": "Keep it short and direct, avoid parallel traces, and place near the crystal."}
+{"id": "qa_24", "question": "How should optocoupler signals be placed to reduce interference?", "answer": "Place signals symmetrically and close to the device to minimize loop area."}
+{"id": "qa_25", "question": "How should matching resistors for CAN/RS485 be placed?", "answer": "Place them near the bus terminals to minimize signal reflection."}
+{"id": "qa_26", "question": "How should signal lines from external oscillators be routed?", "answer": "They should be short and direct, avoiding crossing with other high-frequency signals."}
+{"id": "qa_27", "question": "What traces should be kept away from high-impedance analog inputs?", "answer": "Avoid digital switching signals and RF paths."}
+{"id": "qa_28", "question": "What should be considered when placing test points for high-speed signals?", "answer": "They should be placed close to the signal source, avoiding impact on signal integrity and impedance matching."}
+{"id": "qa_29", "question": "How should the PCB area under a crystal oscillator be handled for optimal performance?", "answer": "Avoid other traces and ground the area to provide a stable reference plane."}
+{"id": "qa_30", "question": "When multiple oscillators exist on board, how to avoid interference?", "answer": "Isolate their placement, prevent trace crossover, and shield mutual coupling paths."}
+{"id": "qa_31", "question": "Which type of signals in PCB layout require highest symmetry?", "answer": "Differential signals like USB, LVDS, and Ethernet."}
+{"id": "qa_32", "question": "Which areas should analog front-end signals avoid on a PCB?", "answer": "Digital switching, clock, DC-DC regions, and high-speed trace layers."}
+{"id": "qa_33", "question": "What should be noted for multi-channel signal acquisition in PCB layout?", "answer": "Equal trace lengths, matched impedance, synchronous layout, and uniform routing direction."}
+{"id": "qa_34", "question": "How should EMI probe traces be laid out for debugging?", "answer": "Provide test points near critical nodes for easy probe access."}
+{"id": "qa_35", "question": "What layout strategy should be used for opto-isolated cross-domain signals?", "answer": "Use single-point crossing and control return interference paths."}
+{"id": "qa_36", "question": "Where should test points for high-speed signals not be placed?", "answer": "Avoid discontinuous impedance zones and exposed copper areas."}
+{"id": "qa_37", "question": "Where should USB matching resistors be placed?", "answer": "Near the chip or connector, with equal-length, symmetric differential pairs."}

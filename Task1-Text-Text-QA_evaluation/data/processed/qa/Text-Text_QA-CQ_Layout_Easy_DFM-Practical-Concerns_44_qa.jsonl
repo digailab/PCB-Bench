@@ -1,0 +1,44 @@
+{"id": "qa_0", "question": "Can components be placed underneath a BGA package?", "answer": "It is not recommended to place components there to avoid soldering issues and signal blockage."}
+{"id": "qa_1", "question": "Where should thermistors be placed on a PCB?", "answer": "They should be placed near the heat source and away from airflow disturbances."}
+{"id": "qa_2", "question": "How should ESD protection devices be placed for better protection?", "answer": "Place them near IO ports with a short and direct path to ground."}
+{"id": "qa_3", "question": "Is it suitable to place high-frequency components in dense routing areas?", "answer": "No, it may cause crosstalk, impedance discontinuity, and heat accumulation."}
+{"id": "qa_4", "question": "What key areas should be reserved when placing microcontrollers?", "answer": "Space should be reserved for programming interfaces, reset circuits, and debugging pins."}
+{"id": "qa_5", "question": "What should be noted when placing isolated circuits?", "answer": "Signal and power grounds should be strictly separated with sufficient spacing."}
+{"id": "qa_6", "question": "What should be considered when placing high-voltage MOSFETs?", "answer": "Isolate control and drive sides, and reinforce copper for heat dissipation."}
+{"id": "qa_7", "question": "How should voltage divider resistors for measurement be placed?", "answer": "They should be placed close to the sampling point to avoid voltage drop or noise."}
+{"id": "qa_8", "question": "What should battery charging chips be placed near?", "answer": "Near the battery connector and power input to reduce loss."}
+{"id": "qa_9", "question": "Where should brushless motor drivers with Hall sensors be placed?", "answer": "Near the motor connector and Hall sensors to reduce delay and noise."}
+{"id": "qa_10", "question": "Where should accelerometers for vibration detection be placed?", "answer": "Near the PCB’s center of mass and away from power modules."}
+{"id": "qa_11", "question": "In photodetection circuits, where should the amplifier be placed?", "answer": "Close to the photodiode to avoid noise from long traces."}
+{"id": "qa_12", "question": "Where should voltage divider resistors for NTC thermistors be placed?", "answer": "Near the NTC body to avoid thermal drift errors."}
+{"id": "qa_13", "question": "What should be noted for routing between thermal sensors and circuits?", "answer": "Use short, dedicated traces, avoid parallel high-frequency or high-current lines."}
+{"id": "qa_14", "question": "How should the feedback pin of a DC-DC converter be routed?", "answer": "It should be routed from a single point, away from noise sources to ensure accurate voltage sensing."}
+{"id": "qa_15", "question": "Which layers should inductive energy paths be routed near on a PCB?", "answer": "They should be routed near continuous ground layers to reduce stray inductance and radiation."}
+{"id": "qa_16", "question": "How should sampling paths be routed for circuits with rapidly changing input voltages?", "answer": "Keep them away from high-current traces and route them close to the converter IC."}
+{"id": "qa_17", "question": "How should negative feedback paths for op-amps be routed on a PCB?", "answer": "Use the shortest path to connect feedback nodes and avoid high-frequency interference."}
+{"id": "qa_18", "question": "Where should battery protection chips be placed for series-connected Li-ion cells?", "answer": "Near the battery detection terminals with short, direct paths."}
+{"id": "qa_19", "question": "What issues may arise from routing under switching nodes?", "answer": "It may cause noise coupling, increased EMI, and ground bounce."}
+{"id": "qa_20", "question": "Where should resistor networks for op-amp reference voltage be placed?", "answer": "Near the op-amp input, with consistent temperature and away from power components."}
+{"id": "qa_21", "question": "Where should optocoupler driver circuits for relays be placed?", "answer": "Near the controller and the relay to reduce delay and interference."}
+{"id": "qa_22", "question": "Where should fan PWM control circuits be placed?", "answer": "Close to the fan output stage to reduce trace loss and interference."}
+{"id": "qa_23", "question": "What traces should not be routed around inductors?", "answer": "Avoid analog signals, clocks, and differential pairs crossing magnetic fields."}
+{"id": "qa_24", "question": "What is the impact of having too much distance between high-speed signal traces and ground?", "answer": "It increases impedance discontinuity and affects signal integrity."}
+{"id": "qa_25", "question": "Why should large copper areas near vias be avoided?", "answer": "It may cause local thermal stress concentration and reduce reliability."}
+{"id": "qa_26", "question": "What manufacturing limitations should be considered when using blind/buried vias?", "answer": "Misalignment between layers can lower yield and increase cost."}
+{"id": "qa_27", "question": "Why should sharp angles be avoided in PCB routing?", "answer": "It causes impedance discontinuities and signal reflections."}
+{"id": "qa_28", "question": "What design practices may lead to PCB warping?", "answer": "Uneven lamination stress or copper thickness can lead to warpage."}
+{"id": "qa_29", "question": "Why should decoupling capacitor regions be included on power planes?", "answer": "Improves power stability and reduces noise coupling."}
+{"id": "qa_30", "question": "What routing techniques should be used for high-current traces to reduce voltage drop?", "answer": "Use wider traces, thicker copper, or multiple parallel routes."}
+{"id": "qa_31", "question": "What risks arise when components are placed near the edge of the PCB?", "answer": "They are vulnerable to mechanical stress or panel cutting."}
+{"id": "qa_32", "question": "What issues may occur if panelization process is not considered during design?", "answer": "It may result in misaligned components or soldering issues."}
+{"id": "qa_33", "question": "How does the layout of test points affect production testing?", "answer": "Improper layout reduces test coverage and inspection efficiency."}
+{"id": "qa_34", "question": "What problems can occur if copper pour relief (windowing) is improperly designed?", "answer": "It may trap heat or cause corrosion due to poor thermal relief."}
+{"id": "qa_35", "question": "What are the manufacturing differences between plugged and non-plugged vias?", "answer": "Plugged vias provide better sealing and soldering quality."}
+{"id": "qa_36", "question": "What issues may arise from asymmetric layer stack-up in multilayer boards?", "answer": "Causes warpage and uneven inter-layer coupling."}
+{"id": "qa_37", "question": "How to reduce the risk of component shift during wave soldering?", "answer": "Align components and unify orientation to prevent shifting."}
+{"id": "qa_38", "question": "How to avoid cold solder joints caused by overly wide connections between pads and copper areas?", "answer": "Overly wide copper can hinder solder flow and cause cold joints."}
+{"id": "qa_39", "question": "Why should traces be avoided beneath SMT components?", "answer": "Traces can interfere with soldering and rework."}
+{"id": "qa_40", "question": "What are the main process differences between ENIG and HASL surface finishes?", "answer": "ENIG is flatter and more suitable for fine-pitch designs."}
+{"id": "qa_41", "question": "What problems may result from sudden changes in trace width during routing?", "answer": "Sudden width changes cause reflections and signal loss."}
+{"id": "qa_42", "question": "How to optimize via distribution in design to enhance reliability?", "answer": "Even distribution reduces thermal and mechanical stress."}
+{"id": "qa_43", "question": "How to prevent the formation of copper pour islands?", "answer": "Remove isolated copper or connect them to the main plane."}

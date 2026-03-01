@@ -1,0 +1,59 @@
+{"id": "qa_0", "question": "What principle should be followed when routing between two points?", "answer": "Keep the trace as short and direct as possible to improve signal integrity."}
+{"id": "qa_1", "question": "How should clock signals be routed?", "answer": "Use short and direct routing, avoid noise sources, and add termination resistors if needed."}
+{"id": "qa_2", "question": "What areas should signal traces avoid?", "answer": "They should avoid power traces, high-speed differential pairs, and antenna zones."}
+{"id": "qa_3", "question": "What should be noted when routing an I2C bus?", "answer": "SCL and SDA should be length-matched, use pull-ups, and avoid long or looping traces."}
+{"id": "qa_4", "question": "What should be done when a signal trace changes layer?", "answer": "Add stitching vias to connect ground planes and maintain return path continuity."}
+{"id": "qa_5", "question": "What should analog signal traces stay away from?", "answer": "Digital, high-frequency, and power traces to avoid crosstalk."}
+{"id": "qa_6", "question": "How to avoid unnecessarily long traces during routing?", "answer": "Optimize layout and connect pins locally to reduce trace length."}
+{"id": "qa_7", "question": "How to handle multiple trace crossings during routing?", "answer": "Use different layers and vias to switch layers and avoid crossovers."}
+{"id": "qa_8", "question": "What to note when routing the same net across different layers?", "answer": "Ensure consistent trace width and impedance to avoid signal discontinuity."}
+{"id": "qa_9", "question": "What to watch for when routing serial communication signals?", "answer": "Use short, direct routing and avoid overlapping with interference sources."}
+{"id": "qa_10", "question": "How to handle 90-degree angles in PCB traces?", "answer": "Use two 45-degree bends or curves to avoid sharp angle reflections."}
+{"id": "qa_11", "question": "Why should the number of vias be minimized during routing?", "answer": "Vias increase path length, introduce discontinuities, and may reduce manufacturing reliability."}
+{"id": "qa_12", "question": "When two signals have large frequency differences, how should their traces be routed?", "answer": "Avoid parallel routing and separate them using ground isolation to reduce crosstalk."}
+{"id": "qa_13", "question": "Why is it recommended to route sensitive signals on internal layers?", "answer": "Internal layers provide better electromagnetic shielding and reduce external interference."}
+{"id": "qa_14", "question": "How to ensure timing consistency in bus signal routing?", "answer": "Use length matching or serpentine routing for all related signals."}
+{"id": "qa_15", "question": "Why is it not recommended to add discontinuous pads in signal traces?", "answer": "They cause impedance discontinuity, resulting in reflection and degraded signal quality."}
+{"id": "qa_16", "question": "How to handle trace crossings of different nets?", "answer": "Use different routing layers or offset routing to avoid same-layer crossings."}
+{"id": "qa_17", "question": "When should termination resistors be added to traces?", "answer": "When signal frequency is high or traces are long, add termination to suppress reflection."}
+{"id": "qa_18", "question": "What problems can overly thin traces cause?", "answer": "High resistance, insufficient current capacity, or overheating, affecting power or signal stability."}
+{"id": "qa_19", "question": "What is impedance control in PCB routing?", "answer": "It means maintaining stable impedance by controlling trace width, spacing, and stack-up."}
+{"id": "qa_20", "question": "How to deal with densely routed PCB areas?", "answer": "Use inner layers, tighter spacing, or optimize component placement to reduce overlap."}
+{"id": "qa_21", "question": "Why is it not recommended to place many vias under signal traces?", "answer": "They disrupt ground reference continuity and affect return current paths."}
+{"id": "qa_22", "question": "How should trace direction be handled between adjacent signal layers?", "answer": "Route traces orthogonally to reduce coupling and crosstalk."}
+{"id": "qa_23", "question": "Do vias affect signal delay?", "answer": "Yes, vias add extra path length and parasitic inductance, leading to delay and distortion."}
+{"id": "qa_24", "question": "What is routing topology in PCB design?", "answer": "It refers to how signals connect between devices, such as point-to-point, daisy-chain, or tree topology."}
+{"id": "qa_25", "question": "Can multiple low-speed signal traces be routed in parallel?", "answer": "Yes, but proper spacing is still needed to avoid crosstalk or overlap."}
+{"id": "qa_26", "question": "Where should signal traces preferably be routed?", "answer": "Near the ICs, low-interference zones, and areas with continuous ground reference."}
+{"id": "qa_27", "question": "Why should signal traces avoid running parallel to connectors?", "answer": "It can cause crosstalk and noise pickup during connector insertion/removal."}
+{"id": "qa_28", "question": "How to improve signal stability in long trace routing?", "answer": "Use ground shielding or differential routing and add termination resistors if needed."}
+{"id": "qa_29", "question": "How to reduce via impact in multi-layer routing?", "answer": "Minimize via usage, control placement, and optimize trace paths."}
+{"id": "qa_30", "question": "When should serpentine routing be used?", "answer": "To compensate trace length and match timing requirements."}
+{"id": "qa_31", "question": "How should UART signals (e.g., TX, RX) be routed?", "answer": "Route them short and close to the chip, avoiding split planes."}
+{"id": "qa_32", "question": "What should be noted in routing I2S audio signals?", "answer": "Match the length of BCLK, LRCK, and DATA lines to maintain synchronization."}
+{"id": "qa_33", "question": "How should SD card interface signals be routed?", "answer": "Route them short, length-matched, near ground, and add termination as needed."}
+{"id": "qa_34", "question": "Why should signals not cross under other signal traces?", "answer": "It breaks return path continuity and increases crosstalk and EMI risk."}
+{"id": "qa_35", "question": "How to route when multiple signals exist between two devices?", "answer": "Use uniform direction routing, place traces near devices, and use serpentine for length adjustment."}
+{"id": "qa_36", "question": "Which layers should be preferred in PCB routing?", "answer": "Prefer signal layers adjacent to ground for return path and shielding."}
+{"id": "qa_37", "question": "What to consider when routing under strict EMC requirements?", "answer": "Minimize loop area, shorten trace length, and optimize grounding."}
+{"id": "qa_38", "question": "Why is same-direction routing preferred for adjacent signals?", "answer": "It reduces coupling area and lowers crosstalk risk."}
+{"id": "qa_39", "question": "Why is frequent layer switching discouraged in routing?", "answer": "It adds vias, which may degrade signal integrity and complicate fabrication."}
+{"id": "qa_40", "question": "How should synchronous signals between multiple chips be routed?", "answer": "Match their trace lengths to avoid skew and ensure timing consistency."}
+{"id": "qa_41", "question": "What is routing density?", "answer": "It refers to the number of traces per unit area; higher density means more routing complexity."}
+{"id": "qa_42", "question": "How to avoid routing critical signals near PCB edges?", "answer": "Route them in inner layers or away from edges to reduce ESD and mechanical interference risks."}
+{"id": "qa_43", "question": "Which signals require symmetric routing?", "answer": "Differential pairs, clock signals, and buses benefit from symmetric layout."}
+{"id": "qa_44", "question": "How to route jumper traces between PCB modules?", "answer": "Place them near module edges, use short routes, or jump via connectors if needed."}
+{"id": "qa_45", "question": "How should unused pins be handled in routing?", "answer": "Follow datasheet recommendations—tie to ground, pull-up, pull-down, or leave unconnected appropriately."}
+{"id": "qa_46", "question": "Why should decoders be placed centrally in the signal path?", "answer": "It allows symmetric trace distribution and reduces routing length and complexity."}
+{"id": "qa_47", "question": "What are the principles for routing low-speed control signals?", "answer": "Keep traces simple, clear, away from high-frequency zones, and avoid loops."}
+{"id": "qa_48", "question": "Why is routing close to IC pins recommended?", "answer": "It shortens lead length, reduces parasitics, and improves stability."}
+{"id": "qa_49", "question": "When routing is tight on small boards, what should be prioritized?", "answer": "Route critical signals first, use inner layers, and optimize fan-out."}
+{"id": "qa_50", "question": "How to protect traces routed near PCB edges from ESD or mechanical damage?", "answer": "Avoid routing critical signals near edges, and add guard ground or increase edge clearance."}
+{"id": "qa_51", "question": "If signal traces must pass through noisy areas, how to mitigate it?", "answer": "Use ground guard traces or shielding, keep routing short, and avoid the center of noise sources."}
+{"id": "qa_52", "question": "Do low-speed control signals require impedance matching?", "answer": "Usually no, but termination can help in long or noisy environments."}
+{"id": "qa_53", "question": "Why should uniform trace width be maintained during routing?", "answer": "To ensure impedance consistency, reduce local heating, and minimize signal reflection."}
+{"id": "qa_54", "question": "How to handle unused routing layers in empty board areas?", "answer": "Fill them with ground or power planes to avoid floating copper and resonance."}
+{"id": "qa_55", "question": "How to handle dense routing in constrained layout?", "answer": "Use more inner layers, optimize placement, or adjust fan-out."}
+{"id": "qa_56", "question": "What issues can sharp angles in routing cause?", "answer": "They concentrate electric fields, collect etchant, and induce manufacturing stress."}
+{"id": "qa_57", "question": "What are the benefits of symmetric routing?", "answer": "It reduces skew, electrical imbalance, timing mismatch, and mode conversion."}
+{"id": "qa_58", "question": "What should be checked after routing is complete?", "answer": "Look for opens, shorts, unconnected nets, excess vias, and impedance issues."}

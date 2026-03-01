@@ -1,0 +1,30 @@
+{"id": "qa_0", "question": "How to ensure test point accessibility in PCB design?", "answer": "Distribute test points evenly with proper spacing, avoid component shadowing, and reserve probe clearance."}
+{"id": "qa_1", "question": "What manufacturability issues should be considered in panelization?", "answer": "Consider depaneling method, consistent orientation, and safe edge spacing to avoid manufacturing conflict."}
+{"id": "qa_2", "question": "How to reduce the risk of cold solder joints during SMT?", "answer": "Ensure proper pad design, avoid copper islands, and use optimized reflow profiles."}
+{"id": "qa_3", "question": "How to place key test nodes in DFT design?", "answer": "Place them near signal sources, use short and direct traces, and avoid routing over sensitive areas."}
+{"id": "qa_4", "question": "What is the impact of plugged vs. non-plugged vias in manufacturing?", "answer": "Plugged vias prevent solder leakage (suitable for BGA), while non-plugged ones are cheaper but riskier."}
+{"id": "qa_5", "question": "How to optimize layout to reduce ICT fixture complexity?", "answer": "Standardize component orientation, cluster test points, and avoid obstructing probe access."}
+{"id": "qa_6", "question": "Why should components be kept away from panel break-away areas?", "answer": "High mechanical stress can cause pad lifting or component damage near break-away edges."}
+{"id": "qa_7", "question": "What factors determine minimum trace width in DFM?", "answer": "Trace width is based on fabrication capability, current rating, and EMC requirements."}
+{"id": "qa_8", "question": "How to improve PCB AOI inspection pass rate?", "answer": "Use clean pads, clear silkscreen, consistent orientation, and avoid occlusion by irregular packages."}
+{"id": "qa_9", "question": "Why should test points not be placed under BGA arrays?", "answer": "They're hard to probe, less accurate, and reduce test reliability."}
+{"id": "qa_10", "question": "How to ensure test points do not affect signal integrity in high-speed PCBs?", "answer": "Avoid placing test points directly on high-speed or differential traces; use via stubs or dedicated probe interfaces instead."}
+{"id": "qa_11", "question": "How to avoid false positives in Automated Optical Inspection (AOI)?", "answer": "Ensure silkscreen does not cover pads, maintain uniform soldering, and standardize component orientation."}
+{"id": "qa_12", "question": "What DFM concerns arise in multi-board panel design?", "answer": "Ensure consistent panel borders, avoid routing across panel gaps, and unify board orientation for efficient assembly."}
+{"id": "qa_13", "question": "Why is it recommended to add auxiliary test structures for BGA chips?", "answer": "BGA balls are inaccessible; edge test points or built-in scan chains help facilitate validation."}
+{"id": "qa_14", "question": "How to control minimum annular ring size for vias in DFM?", "answer": "Set minimum annular ring per fab capability to avoid breakout or reduced reliability."}
+{"id": "qa_15", "question": "What physical constraints should ICT test point layout satisfy?", "answer": "Ensure adequate spacing, no obstruction, and bottom-side access for fixture probes."}
+{"id": "qa_16", "question": "Why avoid placing test points near SMT inductors?", "answer": "Strong magnetic fields around inductors can affect measurement accuracy; keep safe distance."}
+{"id": "qa_17", "question": "How to improve boundary scan test coverage in design?", "answer": "Use IEEE 1149.1 compliant devices, ensure a complete scan chain, and reserve TAP port routing."}
+{"id": "qa_18", "question": "How to prevent solder bridging in pad design?", "answer": "Maintain proper spacing, use solder mask expansion, and control solder paste volume."}
+{"id": "qa_19", "question": "How to reduce PCB warping risk during ICT testing via layout?", "answer": "Distribute components evenly, avoid edge loading, and plan fixture support points."}
+{"id": "qa_20", "question": "Why should test points not be placed near the edge of large copper pours?", "answer": "Edges may be thermally unstable and cause unreliable soldering or measurements; move test points inward."}
+{"id": "qa_21", "question": "How to reserve debug points for functional testing during PCB design?", "answer": "Place jumper holes or pads on key signal lines for easy probing and debugging."}
+{"id": "qa_22", "question": "Why should the pad size for test points be limited?", "answer": "Oversized pads can cause uneven soldering or unstable probe contact."}
+{"id": "qa_23", "question": "How to avoid soldering anomalies on test points during reflow?", "answer": "Use solder mask or non-solderable pad structures to control solder flow."}
+{"id": "qa_24", "question": "How to improve flying probe test efficiency through layout?", "answer": "Avoid obstructions, group test points together, and simplify probe path planning."}
+{"id": "qa_25", "question": "Why use non-contact test methods for high-speed boards?", "answer": "Probes may interfere with high-speed signals; prefer scan or boundary-scan methods."}
+{"id": "qa_26", "question": "How to prevent oxidation from affecting long-term testability of test points?", "answer": "Use ENIG or tin plating to protect surface and ensure stable probing over time."}
+{"id": "qa_27", "question": "Why standardize component orientation for testability?", "answer": "Facilitates automated inspection and increases placement and test efficiency."}
+{"id": "qa_28", "question": "How to reduce signal interference caused by clustered test points?", "answer": "Keep test points away from sensitive analog traces and avoid return path conflicts."}
+{"id": "qa_29", "question": "How to avoid placing test points in depaneling slots?", "answer": "Plan panel borders in advance to keep test points away from V-cuts or break-away tabs."}

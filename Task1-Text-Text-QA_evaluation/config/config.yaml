@@ -1,0 +1,66 @@
+# PCB Benchmark 评估配置
+# 使用 OpenRouter 统一接口
+
+# LLM配置 - 统一使用OpenRouter接口
+llm:
+  base_url: "https://openrouter.ai/api/v1"
+  temperature: 0.0
+  max_tokens: 2048
+  timeout: 120
+  max_retries: 10
+  retry_delay: 5.0
+  
+  # 默认模型
+  default_model: "opengvlab/internvl3-78b"
+
+# 数据配置
+data:
+  raw_path: "data/raw"
+  processed_path: "data/processed/qa"
+  single_choice_questions_file: "Text-Text_QA_Routing_Hard_Signal-Quality-and-Impedance_18_qa.jsonl"
+  qa_questions_file: "extra.jsonl"
+
+# 输出配置
+output:
+  results_dir: "results"
+
+# 评测配置
+evaluation:
+  save_progress: true  # 是否保存进度
+  max_questions: null  # 最大问题数，null表示全部
+  
+  # 并行模式配置
+  parallel:
+    show_progress: true  # 是否显示实时进度
+    sort_results: true   # 是否按问题索引排序结果（便于分析）
+
+# 系统提示词配置
+system_prompt: |
+  You are a professional PCB design and electronic engineering expert with extensive knowledge in circuit design, PCB layout, signal integrity analysis, and related areas.
+
+  Please answer the following PCB-related multiple-choice questions based on your expertise. For each question:
+  1.Carefully analyze the question and each option.
+  2.Apply your PCB design knowledge for reasoning.
+  3.Choose the most accurate answer.
+  4.Only provide the letter of the option (A, B, C, D, or E), no explanation is needed.
+
+  Please remain professional and accurate.
+# 问答题系统提示词
+qa_system_prompt: |
+  You are a professional PCB design and electronics engineering expert with extensive knowledge in circuit design, PCB layout, and signal integrity analysis.
+
+  Using your expertise, answer the following PCB-related open questions. For each question:
+  1. Carefully analyze what the question asks.
+  2. Apply your PCB design knowledge to analyze and solve the problem.
+  3. Provide an accurate, detailed, and professional answer.
+  4. Keep the answer concise and focused; emphasize the key points.
+
+  Maintain a professional and accurate tone.
+
+# 文件名
+files:
+  qa_questions: "qa_questions.jsonl"
+  single_choice_questions: "single_choice_questions.jsonl"
+  evaluation_results: "evaluation_results.jsonl"
+  evaluation_report: "evaluation_report.json"
+ 

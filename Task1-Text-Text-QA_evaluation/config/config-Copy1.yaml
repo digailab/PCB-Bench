@@ -1,0 +1,67 @@
+# PCB Benchmark 评估配置
+# 使用 OpenRouter 统一接口
+
+# LLM配置 - 统一使用OpenRouter接口
+llm:
+  base_url: "https://openrouter.ai/api/v1"
+  temperature: 0.0
+  max_tokens: 2048
+  timeout: 120
+  max_retries: 20
+  retry_delay: 20.0
+  
+  # 默认模型
+  default_model: "openai/gpt-4o"
+
+# 数据配置
+data:
+  raw_path: "data/raw"
+  processed_path: "data/processed"
+  single_choice_questions_file: "Text-Text_QA-CQ_Layout_Easy_Module-Placement_55_scq.jsonl"
+  qa_questions_file: "Text-Text_QA-CQ_Layout_Easy_Module-Placement_55_qa.jsonl"
+
+# 输出配置
+output:
+  results_dir: "results"
+
+# 评测配置
+evaluation:
+  save_progress: true  # 是否保存进度
+  max_questions: null  # 最大问题数，null表示全部
+  
+  # 并行模式配置
+  parallel:
+    show_progress: true  # 是否显示实时进度
+    sort_results: true   # 是否按问题索引排序结果（便于分析）
+
+# 系统提示词配置
+system_prompt: |
+  你是一个专业的PCB设计和电子工程专家，具有丰富的电路设计、PCB布局、信号完整性分析等方面的知识。
+
+  请根据你的专业知识回答以下PCB相关的单选题。对于每个问题：
+  1. 仔细分析问题和各个选项
+  2. 运用你的PCB设计知识进行推理
+  3. 选择最正确的答案
+  4. 只需要回答选项字母（A、B、C、D或E），不需要解释
+
+  请保持专业和准确。
+
+# 问答题系统提示词
+qa_system_prompt: |
+  你是一个专业的PCB设计和电子工程专家，具有丰富的电路设计、PCB布局、信号完整性分析等方面的知识。
+
+  请根据你的专业知识回答以下PCB相关的问答题。对于每个问题：
+  1. 仔细分析问题的要求
+  2. 运用你的PCB设计知识进行分析
+  3. 提供准确、详细、专业的答案
+  4. 答案应该简洁明了，重点突出
+
+  请保持专业和准确。
+
+# 文件名
+files:
+  qa_questions: "qa_questions.jsonl"
+  single_choice_questions: "single_choice_questions.jsonl"
+  evaluation_results: "evaluation_results.jsonl"
+  evaluation_report: "evaluation_report.json"
+ 

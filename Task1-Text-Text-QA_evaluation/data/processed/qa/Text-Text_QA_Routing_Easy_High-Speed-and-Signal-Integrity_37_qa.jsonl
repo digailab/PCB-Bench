@@ -1,0 +1,37 @@
+{"id": "qa_0", "question": "How should the lengths of differential pair traces be handled?", "answer": "They should be length-matched to ensure timing and signal synchronization."}
+{"id": "qa_1", "question": "Where should high-speed signal traces be routed?", "answer": "Close to a continuous ground plane to ensure a stable return path."}
+{"id": "qa_2", "question": "What routing issues mainly cause crosstalk?", "answer": "Long parallel routing, close spacing, and lack of ground reference are the main causes."}
+{"id": "qa_3", "question": "How do vias affect high-speed signal routing?", "answer": "Vias introduce parasitic capacitance and inductance, which may cause signal reflection."}
+{"id": "qa_4", "question": "How to mitigate interference between low-speed and high-speed signals?", "answer": "Route them far apart and isolate using ground planes or guard traces."}
+{"id": "qa_5", "question": "What are spacing requirements for differential pairs in high-speed routing?", "answer": "Keep fixed spacing to maintain impedance and avoid mode conversion."}
+{"id": "qa_6", "question": "When should ground guard traces be used in high-speed routing?", "answer": "Use them when signal integrity is critical to reduce crosstalk and enhance shielding."}
+{"id": "qa_7", "question": "What to consider when differential pairs change layers?", "answer": "Preserve consistent reference planes and control via spacing to avoid impedance discontinuities."}
+{"id": "qa_8", "question": "How to reduce signal loss in long trace routing?", "answer": "Use short, straight, and sufficiently wide traces, and avoid excessive bends or vias."}
+{"id": "qa_9", "question": "How to avoid distortion when bending high-speed traces?", "answer": "Use 45-degree or curved bends instead of right-angle corners to reduce reflections."}
+{"id": "qa_10", "question": "What is a ground guard trace?", "answer": "A ground trace that runs parallel to signal lines to suppress crosstalk and enhance shielding."}
+{"id": "qa_11", "question": "What should be noted when routing USB differential pairs?", "answer": "Length-matched, fixed-spacing, routed near ground, and avoid layer changes."}
+{"id": "qa_12", "question": "How to enhance power noise immunity in routing?", "answer": "Use wide power traces near ground, and add decoupling capacitors."}
+{"id": "qa_13", "question": "What are common signal integrity issues in routing?", "answer": "Reflection, crosstalk, impedance discontinuity, and via-induced losses."}
+{"id": "qa_14", "question": "How to route traces to avoid signal reflections caused by vias?", "answer": "Use impedance-matched vias such as short vias, blind vias, or add termination resistors."}
+{"id": "qa_15", "question": "How to avoid creating antenna-like traces?", "answer": "Avoid long stubs, open ends, and disconnected return paths."}
+{"id": "qa_16", "question": "Why must high-speed signals not be left floating?", "answer": "They can cause reflections, radiate interference, and degrade signal integrity."}
+{"id": "qa_17", "question": "Why should routing direction not change abruptly in high-speed traces?", "answer": "It introduces impedance discontinuities, causing signal reflections and integrity issues."}
+{"id": "qa_18", "question": "Why should differential pairs be length-matched during routing?", "answer": "Length matching reduces skew and common-mode noise, improving signal quality."}
+{"id": "qa_19", "question": "Why should high-speed signals avoid crossing power plane splits?", "answer": "It breaks the return path and introduces EMI issues."}
+{"id": "qa_20", "question": "How can crosstalk be minimized in high-speed routing?", "answer": "Ensure spacing, use reference planes, and limit parallel trace length."}
+{"id": "qa_21", "question": "Why are high-speed signals often routed on inner layers?", "answer": "Inner layers provide stable impedance and reduced radiation interference."}
+{"id": "qa_22", "question": "Why is length matching important in DDR routing?", "answer": "It ensures timing consistency and avoids signal skew errors."}
+{"id": "qa_23", "question": "What are the drawbacks of serpentine length compensation?", "answer": "It may introduce additional crosstalk and reflection, and should be used carefully."}
+{"id": "qa_24", "question": "Why should vias be minimized in high-speed signal routing?", "answer": "Vias cause impedance discontinuities and signal reflections."}
+{"id": "qa_25", "question": "Why is the clock signal considered the most critical high-speed signal?", "answer": "It synchronizes the circuit and is sensitive to interference."}
+{"id": "qa_26", "question": "Why should high-speed traces be routed near ground reference planes in PCBs?", "answer": "It ensures a complete return path and reduces EMI risk."}
+{"id": "qa_27", "question": "Why should signal polarity reversal in differential routing be avoided?", "answer": "Reversal causes asymmetric coupling, degrading signal quality."}
+{"id": "qa_28", "question": "Why should spacing between differential pairs be controlled?", "answer": "Spacing affects coupling strength, impacting impedance and noise immunity."}
+{"id": "qa_29", "question": "What is the recommended relation between high-frequency traces and reference planes?", "answer": "Traces should closely follow continuous reference planes to maintain impedance continuity."}
+{"id": "qa_30", "question": "What is a stitching via in high-frequency design?", "answer": "It's a ground via used to maintain a continuous return path."}
+{"id": "qa_31", "question": "When is crosstalk most likely in high-speed routing?", "answer": "When traces run closely in parallel or reference planes are discontinuous."}
+{"id": "qa_32", "question": "How to reduce EMI radiation in PCBs?", "answer": "Use solid reference planes, minimize return loop area, and shield critical signals."}
+{"id": "qa_33", "question": "Why is impedance continuity crucial for high-speed signals?", "answer": "Discontinuity causes reflection, leading to signal distortion."}
+{"id": "qa_34", "question": "What should be considered when high-speed signals switch layers?", "answer": "Reference planes must switch with the signal, aided by ground vias."}
+{"id": "qa_35", "question": "How do vias affect high-speed signals?", "answer": "Vias introduce inductance and impedance changes that degrade signal quality."}
+{"id": "qa_36", "question": "How to avoid reflections in DDR routing?", "answer": "Match termination impedance and control routing topology."}

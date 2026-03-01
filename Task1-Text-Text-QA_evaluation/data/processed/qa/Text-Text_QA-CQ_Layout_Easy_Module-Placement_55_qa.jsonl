@@ -1,0 +1,55 @@
+{"id": "qa_0", "question": "What should be considered when placing power devices?", "answer": "They should be placed near the load and minimize the current loop path."}
+{"id": "qa_1", "question": "In layout, what types of modules should antennas be kept away from?", "answer": "They should be kept away from high-speed digital circuits, power converters, and large metal areas."}
+{"id": "qa_2", "question": "Where is the proper placement of buttons and LED indicators on a PCB?", "answer": "Near the board edge or user interface area for easy debugging and operation."}
+{"id": "qa_3", "question": "How should I2C devices be placed to ensure stable communication?", "answer": "They should be close to the controller with short, straight traces and minimal bends."}
+{"id": "qa_4", "question": "When placing inductors, which modules should be avoided nearby?", "answer": "Avoid placing them near RF modules, ADCs, or crystal oscillators."}
+{"id": "qa_5", "question": "How should MOSFETs be placed in high-power boards?", "answer": "Place them near the heatsink and aligned with the current path to reduce impedance."}
+{"id": "qa_6", "question": "How should operational amplifiers be placed on a PCB to reduce noise?", "answer": "They should be placed close to the signal source and away from high-frequency or switching components."}
+{"id": "qa_7", "question": "Where should RJ45 Ethernet ports be placed?", "answer": "They should be placed near the board edge, with differential pairs matched in length and routed symmetrically."}
+{"id": "qa_8", "question": "How should components be placed when using CAN bus communication?", "answer": "Termination resistors should be placed close to transceivers with short and straight traces."}
+{"id": "qa_9", "question": "Where should connectors like FPC be placed?", "answer": "Near the board edge for easy connection and testing with external devices."}
+{"id": "qa_10", "question": "What electrical rules should be considered when placing opto-isolators?", "answer": "Creepage and clearance distances must comply with safety standards."}
+{"id": "qa_11", "question": "Where should the main controller be placed in a multi-module system?", "answer": "Centrally placed to simplify signal trace distribution."}
+{"id": "qa_12", "question": "Where should DC fan control circuits be placed?", "answer": "Near thermal zones or temperature control modules for quick response and logical layout."}
+{"id": "qa_13", "question": "How should high-voltage components be placed on a PCB to ensure safety?", "answer": "They should maintain adequate creepage and clearance distances and be kept away from low-voltage control circuits."}
+{"id": "qa_14", "question": "Where should wireless communication modules preferably be placed?", "answer": "They should be placed at the edge of the PCB, away from high-speed digital circuits and metal-shielded components."}
+{"id": "qa_15", "question": "How should MOSFET drivers for switching control be placed?", "answer": "They should be close to the MOSFETs, with short and direct traces and clear ground return paths."}
+{"id": "qa_16", "question": "Where should MCU-controlled electromagnetic relays be placed?", "answer": "They should be placed near the load side and away from weak analog signal areas."}
+{"id": "qa_17", "question": "Why should thermal sensors be placed away from high-power components?", "answer": "To avoid distortion from unintended heat sources."}
+{"id": "qa_18", "question": "What layout rules should PWM control traces follow?", "answer": "They should be short, straight, kept away from analog areas, and avoid coupling with sensitive signals."}
+{"id": "qa_19", "question": "Where should TX/RX pins for data communication be placed?", "answer": "They should be placed near transceivers or UART interface chips."}
+{"id": "qa_20", "question": "How should synchronous rectifier chips be placed to improve efficiency?", "answer": "They should be placed near the transformer secondary side with short current and ground paths."}
+{"id": "qa_21", "question": "Where should high-precision voltage sampling modules be placed?", "answer": "They should be kept away from switching nodes and digital logic and close to the sampling target."}
+{"id": "qa_22", "question": "Where should potentiometers be placed?", "answer": "Close to the circuit they adjust, like op-amp feedback or reference circuits."}
+{"id": "qa_23", "question": "Where should eFuse modules be placed?", "answer": "Near power input or secondary protection points to protect the system."}
+{"id": "qa_24", "question": "Where should MCU communication interfaces be placed?", "answer": "Near connectors or communication peripherals to reduce interference."}
+{"id": "qa_25", "question": "What should be considered when placing high ESD-sensitive modules?", "answer": "Place ESD components near the interface with good ground paths."}
+{"id": "qa_26", "question": "Where should SPI Flash be placed?", "answer": "Near the MCU with symmetrical trace routing."}
+{"id": "qa_27", "question": "How should level shifters for multi-voltage domains be placed?", "answer": "Near the boundary between voltage domains and avoid long transmission distances."}
+{"id": "qa_28", "question": "Which modules should digital clock management chips be placed near?", "answer": "They should be placed close to clock-consuming modules to avoid long transmission delays."}
+{"id": "qa_29", "question": "Where should EEPROM chips be placed on the PCB?", "answer": "They should be placed near the main controller with short and direct data lines."}
+{"id": "qa_30", "question": "What layout strategies help improve RF front-end performance?", "answer": "Place modules far from interference, ensure a solid ground plane underneath, and limit nearby routing."}
+{"id": "qa_31", "question": "How should isolated communication interfaces like RS485 be routed?", "answer": "Strictly partition isolated and logic sides, use short traces and ensure separate return paths."}
+{"id": "qa_32", "question": "Which components should be kept away from precision reference voltage sources?", "answer": "Keep away from switching components, inductors, and high-frequency routing areas."}
+{"id": "qa_33", "question": "Where should RTC modules be placed?", "answer": "Away from high-speed signals, near the main controller, and with stable power supply."}
+{"id": "qa_34", "question": "Where should backplane connectors for multi-board systems be placed?", "answer": "Near the main controller or communication hub to shorten critical signal paths."}
+{"id": "qa_35", "question": "How should the RF matching network be placed for antennas?", "answer": "It should be placed close to the antenna port with short, direct paths and near the ground plane."}
+{"id": "qa_36", "question": "Where should modules with CAN transceivers be placed?", "answer": "Near the CAN bus connector, with termination resistors placed close to the transceiver."}
+{"id": "qa_37", "question": "How should thermocouple modules be placed to avoid thermal drift?", "answer": "Place them away from heat-generating components like power ICs and MOSFETs."}
+{"id": "qa_38", "question": "Where should TVS diodes for interface protection be placed?", "answer": "Near the signal input pin with short trace and solid grounding."}
+{"id": "qa_39", "question": "Where should PWM pins on the main controller be placed?", "answer": "Near the driven MOSFET or driver IC to keep the control chain compact."}
+{"id": "qa_40", "question": "How should hot-plug capable interface modules be placed?", "answer": "Near the board edge with TVS and soft-start components."}
+{"id": "qa_41", "question": "What modules might be affected by insufficient copper width on a PCB?", "answer": "High-current modules may suffer voltage drop, heating, and unstable power delivery."}
+{"id": "qa_42", "question": "Where should large modules like screen connectors be placed?", "answer": "Near the edge of the board to reduce cable length and ease assembly."}
+{"id": "qa_43", "question": "What electrical characteristics should be considered for traces behind connectors?", "answer": "Impedance matching, avoiding sharp turns, and maintaining differential pair symmetry."}
+{"id": "qa_44", "question": "How should flyback transformers and MOSFETs be placed?", "answer": "They should be close together to form the smallest loop and reduce EMI."}
+{"id": "qa_45", "question": "How should BOOT/config pins of the MCU be placed?", "answer": "Close to pull-up/pull-down resistors and reserve a debug jumper area."}
+{"id": "qa_46", "question": "Where should RF modules be placed in multi-board stacks?", "answer": "On the top board to minimize metal interference and improve antenna efficiency."}
+{"id": "qa_47", "question": "How should the magnetic flux direction of inductors relate to surrounding components?", "answer": "Place them orthogonally to each other to avoid magnetic field interference."}
+{"id": "qa_48", "question": "Where should infrared temperature sensors with thermopiles be placed?", "answer": "Near the sensing aperture, away from heat sources, and symmetrically arranged."}
+{"id": "qa_49", "question": "What mechanical factors should be considered when placing interface modules?", "answer": "Avoid screw holes, standoffs, and mechanical edge constraints."}
+{"id": "qa_50", "question": "How should OLED interface modules be placed?", "answer": "Near the board edge, away from EMI zones, and with reserved FPC space."}
+{"id": "qa_51", "question": "Do UART modules for low-speed communication require trace matching?", "answer": "Not strictly, but traces should be stable and avoid excessive vias."}
+{"id": "qa_52", "question": "How should high-power modules be placed to improve thermal reliability?", "answer": "Place near edges, distribute heat sources, and reserve thermal copper areas."}
+{"id": "qa_53", "question": "How should BLE RF modules be placed?", "answer": "Near the antenna, away from metal enclosures and ground splits."}
+{"id": "qa_54", "question": "Where should external reset buttons be placed?", "answer": "Near MCU reset pins with proper ESD protection."}
