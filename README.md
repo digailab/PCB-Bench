@@ -30,7 +30,7 @@ PCB-Bench spans **three complementary task settings** and corresponding datasets
 - Covers visual-semantic subtasks such as component identification, functional block recognition, trace reasoning, via presence checking, differential-pair continuity analysis, etc. 
 
 ### 3) Real-world PCB design comprehension (PCB Design Understanding)
-- **174** complete real-world PCB projects collected from **OSHWHub (operated by JLCPCB)**
+- **174** complete real-world PCB projects collected from **OSHWHub (operated by JLCPCB)** (https://oshwhub.com/)
 - Each design includes artifacts such as **schematics**, **placement/routing files**, **design descriptions**, **component libraries**, and **EDA software screenshots**
 - Task setting: given a **standalone EDA editor screenshot** (no extra text/schematic provided), models generate a **free-form description** of the board’s function/structure/application scenario, assessing structured visual interpretation of professional PCB artifacts. 
 
