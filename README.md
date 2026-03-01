@@ -1,7 +1,8 @@
 # PCB-Bench
 **PCB-Bench: Benchmarking LLMs for Printed Circuit Board Placement and Routing** (ICLR 2026)
 
-[📄 OpenReview: https://openreview.net/forum?id=Q5QLu7XTWx&referrer](https://openreview.net/forum?id=Q5QLu7XTWx&referrer) | [🌐 Project Page: https://digailab.github.io/PCB-Bench/](https://digailab.github.io/PCB-Bench/)
+[📄 OpenReview: https://openreview.net/forum?id=Q5QLu7XTWx&referrer](https://openreview.net/forum?id=Q5QLu7XTWx&referrer) 
+[🌐 Project Page: https://digailab.github.io/PCB-Bench/](https://digailab.github.io/PCB-Bench/)
 
 PCB-Bench is the **first comprehensive benchmark** designed to systematically evaluate (multimodal) large language models (LLMs/MLLMs) in the context of **PCB placement and routing**. It addresses the lack of standardized benchmarks and high-fidelity datasets for real-world PCB engineering reasoning by integrating **text**, **images**, and **real PCB design artifacts** into a unified evaluation framework.
 
