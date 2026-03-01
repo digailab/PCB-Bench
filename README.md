@@ -110,6 +110,10 @@ The paper benchmarks a diverse set of state-of-the-art LLMs/MLLMs under the unif
 
 The paper details task formulations, metrics, and model settings. Results are obtained under the unified **zero-shot** setting. The benchmark is released **along with evaluation scripts and configuration files** to support reproduction and extension. 
 
+## Acknowledgements
+We gratefully acknowledge the support of Qiyunfang. 
+We also thank OSHWHub and JLCPCB for providing access to publicly available PCB design resources.
+
 
 
 ## Citation
