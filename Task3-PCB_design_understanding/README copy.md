@@ -1,1 +1,0 @@
-If you want to run tests, please put your API key in config/.env, and modify the other parameters in config.yaml.
