@@ -93,7 +93,7 @@ The paper benchmarks a diverse set of state-of-the-art LLMs/MLLMs under the unif
 ## Data Sources & Licensing
 
 - PCB designs are collected from **publicly available and legally accessible sources**, with **no proprietary or sensitive industrial data** involved.  
-- Real-world PCB projects are collected from **OSHWHub**; each design is associated with a corresponding URL link to ensure transparency and IP protection.  
+- Real-world PCB projects are collected from **OSHWHub** (https://oshwhub.com/); each design is associated with a corresponding URL link to ensure transparency and IP protection.  
 - PCB-Bench is released with **open licensing** to support reproducibility and standardized comparison. 
 
 <p align="center">
