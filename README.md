@@ -125,9 +125,9 @@ We also thank OSHWHub and JLCPCB for providing access to publicly available PCB 
 If you use PCB-Bench in your research, please cite:
 
 ```bibtex
-@inproceedings{li2026pcbbench,
+@inproceedings{lipcb,
   title     = {PCB-Bench: Benchmarking LLMs for Printed Circuit Board Placement and Routing},
-  author    = {Jindong Li and Lianrong Chen and Bin Yang and Jiadong Zhu and Ying Wang and Yuzhe Ma and Menglin Yang},
-  booktitle = {International Conference on Learning Representations (ICLR)},
+  author    =  {Li, Jindong and Chen, Lianrong and YANG, BIN and Zhu, Jiadong and Wang, Ying and Ma, Yuzhe and Yang, Menglin},
+  booktitle = {The Fourteenth International Conference on Learning Representations},
   year      = {2026}
 }
