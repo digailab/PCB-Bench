@@ -127,7 +127,7 @@ If you use PCB-Bench in your research, please cite:
 ```bibtex
 @inproceedings{lipcb,
   title     = {PCB-Bench: Benchmarking LLMs for Printed Circuit Board Placement and Routing},
-  author    = {Li, Jindong and Chen, Lianrong and YANG, BIN and Zhu, Jiadong and Wang, Ying and Ma, Yuzhe and Yang, Menglin},
+  author    = {Li, Jindong and Chen, Lianrong and Yang, Bin and Zhu, Jiadong and Wang, Ying and Ma, Yuzhe and Yang, Menglin},
   booktitle = {The Fourteenth International Conference on Learning Representations},
   year      = {2026}
 }
